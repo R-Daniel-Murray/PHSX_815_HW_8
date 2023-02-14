@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     plt.figure()
     # creates histogram
-    n, bins, patches = plt.hist(flat, bins=range(8), alpha=0.7 ,rwidth=0.95, density = True, facecolor = "blue")
+    n, bins, patches = plt.hist(flat, bins=range(8), alpha=0.7 ,rwidth=0.95, density = True, facecolor = "green")
 
     # plot formating options
     plt.xlabel('face number of dice rolls')
@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
 
     # creates histogram
-    n, bins, patches = plt.hist(flat, bins=range(20) , alpha=0.7, rwidth=0.95, density = True, facecolor = "plum")
+    n, bins, patches = plt.hist(flat, bins=range(20) , alpha=0.7, rwidth=0.95, density = True, facecolor = "red")
 
     # plot formating options
     plt.xlabel('Sum of the face numbers for each experiment')
