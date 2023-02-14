@@ -12,7 +12,7 @@ import Random as rng
 if __name__ == "__main__":
     # if the user includes the flag -h or --help print the options
     if '-h' in sys.argv or '--help' in sys.argv:
-        print ("Usage: %s [-seed number] [-Ndice number] [-Nexp number] [-prob1 number] [-prob2 number] [-prob3 number] [-prob4 number] [-prob5 number] [-prob6 number]" % sys.argv[0])
+        print ("Usage: %s [-seed number] [-Ndice number] [-Nexp number] [-prob1 number] [-prob2 number] [-prob3 number] [-prob4 number] [-prob5 number] [-prob6 number] [-prob7 number] [-prob8 number] [-prob9 number]" % sys.argv[0])
         print
         sys.exit(1)
 
@@ -38,13 +38,13 @@ if __name__ == "__main__":
     prob6 = 0.166667 
     
     # default single dice roll probability for "7"
-    prob6 = 0.166667 
+    prob7 = 0.166667 
     
     # default single dice roll probability for "8"
-    prob6 = 0.166667 
+    prob8 = 0.166667 
     
     # default single dice roll probability for "9"
-    prob6 = 0.166667 
+    prob9 = 0.166667 
 
     # default number of dice rolls per experiment
     Ndice = 1
@@ -126,11 +126,11 @@ if __name__ == "__main__":
         outfile = open(OutputFileName, 'w')
         for e in range(0,Nexp):
             for t in range(0,Ndice):
-                outfile.write(str(random.Categorical(prob1,prob2,prob3,prob4,prob5,prob6))+" ")
+                outfile.write(str(random.Categorical(prob1,prob2,prob3,prob4,prob5,prob6,prob7,prob8,prob9))+" ")
             outfile.write(" \n")
         outfile.close()
     else:
         for e in range(0,Nexp):
             for t in range(0,Ndice):
-                print(random.Categorical(prob1,prob2,prob3,prob4,prob5,prob6), end=' ')
+                print(random.Categorical(prob1,prob2,prob3,prob4,prob5,prob6,prob7,prob8,prob9), end=' ')
             print(" ")
