@@ -75,13 +75,13 @@ class Random:
             return 4
         if p1 + p2 + p3 + p4  < R < p1 + p2 + p3 + p4 + p5:
             return 5
-        if p1 + p2 + p3 + p4  < R < p1 + p2 + p3 + p4 + p5 +p6:
+        if p1 + p2 + p3 + p4 + p5 < R < p1 + p2 + p3 + p4 + p5 +p6:
             return 6
-        if p1 + p2 + p3 + p4 + p5 < R < p1 + p2 + p3 + p4 + p5 + p6 + p7:
+        if p1 + p2 + p3 + p4 + p5 + p6 < R < p1 + p2 + p3 + p4 + p5 + p6 + p7:
             return 7
-        if p1 + p2 + p3 + p4 + p5 + p6 < R < p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8:
+        if p1 + p2 + p3 + p4 + p5 + p6 + p7 < R < p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8:
             return 8
-        if p1 + p2 + p3 + p4 + p5 + p6 + p7 < R < p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9:
+        if p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 < R < p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9:
             return 9
         else:
             return 10
