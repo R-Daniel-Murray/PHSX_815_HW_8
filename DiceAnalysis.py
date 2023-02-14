@@ -25,34 +25,35 @@ if __name__ == "__main__":
         print ("   -input [filename]  name of file for data")
     
     # Lets import data.txt
-    filename = 'j.txt'
+    filename = 'Generated.txt'
     dat = np.loadtxt(filename)
     flat = dat.flatten()
     add=np.sum(dat,axis=0)
 
-    
+    plt.figure()
     # creates histogram
     n, bins, patches = plt.hist(flat, bins=range(8), alpha=0.7 ,rwidth=0.95, density = True, facecolor = "blue")
 
     # plot formating options
-    plt.xlabel('face number')
+    plt.xlabel('face number of dice rolls')
     plt.ylabel('Probablity')
-    plt.title(str(len(dat)*len(dat[0])) + ' dice rolls')
+    plt.title(str(len(flat))+ ' dice rolls')
     plt.grid(axis='y', alpha=0.75)
     plt.xlim(xmin=0.5, xmax = 7.5)
-    #plt.xticks(range(6))
+    #plt.xticks(range(10))
     # show figure (program only ends once closed
     plt.show()
 
+
     # creates histogram
-    n, bins, patches = plt.hist(add, bins=range(6*len(dat[0])+2) , alpha=0.7, rwidth=0.95, density = True, facecolor = "plum")
+    n, bins, patches = plt.hist(flat, bins=range(20) , alpha=0.7, rwidth=0.95, density = True, facecolor = "plum")
 
     # plot formating options
     plt.xlabel('Sum of the face numbers for each experiment')
     plt.ylabel('Probability')
-    plt.title(str(len(dat))+' experiments of '+(len(dat[0]))+' dice rolls')
+    plt.title(str(len(flat))+' experiments of '+' dice rolls')
     plt.grid(axis='y', alpha=0.75)
-    plt.xlim([len(dat[0]), 6.0*len(dat[0])+2])
-    #plt.xticks(range(len(dat[0])-1,6*len(dat[0])+2))
+    plt.xlim([len(flat[0]), 10.0*len(flat[0])+2])
+    #plt.xticks(range(len(dat[0])-1,10*len(dat[0])+2))
     # show figure (program only ends once closed
     plt.show()
