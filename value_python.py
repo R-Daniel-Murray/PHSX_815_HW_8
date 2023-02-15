@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
 values = np.arange(1,10) 
-prob = (0.11111, 0.11111, 0.11111, 0.11111, 0.11111, 0.11111, 0.11111, 0.11111, 0.11111) # probabilities must sum to 1
+prob = (0.111111, 0.111111, 0.111111, 0.111111, 0.111111, 0.111111, 0.111111, 0.111111, 0.111111) # probabilities must sum to 1
 custm = stats.rv_discrete(values=(values, prob))
 
 for i in range(10000):
