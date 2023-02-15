@@ -43,7 +43,7 @@ class Random:
         return 5.42101086242752217E-20 * self.int64()
 
     # function returns a random integer (0 or 1) according to a Bernoulli distr.
-    def Categorical(self, p1=0.166667,p2=0.166667, p3=0.166667, p4=0.166667, p5=0.166667, p6=0.166667, p7=0.166667, p8=0.166667, p9=0.166667):
+    def Categorical(self, p1=0.111111,p2=0.111111, p3=0.111111, p4=0.111111, p5=0.111111, p6=0.111111, p7=0.111111, p8=0.11111, p9=0.111111):
         if p1 < 0. or p1 > 1.:
             return 1
         if p2 < 0. or p2 > 1.:
