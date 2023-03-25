@@ -11,7 +11,7 @@ class Random:
     """A random number generator class"""
 
     # initialization method for Random class
-    def __init__(self, seed = 5555):
+    def __init__(self, seed = 5655):
         self.seed = seed
         self.m_v = np.uint64(4101842887655102017)
         self.m_w = np.uint64(1)
@@ -48,20 +48,7 @@ class Random:
             return 1
         if p2 < 0. or p2 > 1.:
             return 2            
-        if p3 < 0. or p3 > 1.:
-            return 3
-        if p4 < 0. or p4 > 1.:
-            return 4
-        if p5 < 0. or p5 > 1.:
-            return 5
-        if p6 < 0. or p6 > 1.:
-            return 6
-        if p7 < 0. or p7 > 1.:
-            return 7
-        if p8 < 0. or p8 > 1.:
-            return 8
-        if p9 < 0. or p9 > 1.:
-            return 9
+      
                                             
         R = self.rand()
 
@@ -100,3 +87,4 @@ class Random:
       X = -math.log(R)/beta
 
       return X
+
